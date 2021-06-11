@@ -1,0 +1,1097 @@
+log file: logs/210610-103940.log
+--------------------------------------------------------------------------------
+Config 1 (totally 4 configs)
+No.1 training process of 1
+https://s3.amazonaws.com/models.huggingface.co/bert/bert-base-chinese-vocab.txt not found in cache or force_download set to True, downloading to C:\Users\54367\AppData\Local\Temp\tmpxe0wdptm
+copying C:\Users\54367\AppData\Local\Temp\tmpxe0wdptm to cache at C:\Users\54367\.cache\torch\pytorch_transformers\8a0c070123c1f794c42a29c6904beb7c1b8715741e235bee04aca2c7636fc83f.9b42061518a39ca00b8b52059fd2bede8daa613f8a8671500e518a8c29de8c00
+creating metadata file for C:\Users\54367\.cache\torch\pytorch_transformers\8a0c070123c1f794c42a29c6904beb7c1b8715741e235bee04aca2c7636fc83f.9b42061518a39ca00b8b52059fd2bede8daa613f8a8671500e518a8c29de8c00
+removing temp file C:\Users\54367\AppData\Local\Temp\tmpxe0wdptm
+loading file https://s3.amazonaws.com/models.huggingface.co/bert/bert-base-chinese-vocab.txt from cache at C:\Users\54367\.cache\torch\pytorch_transformers\8a0c070123c1f794c42a29c6904beb7c1b8715741e235bee04aca2c7636fc83f.9b42061518a39ca00b8b52059fd2bede8daa613f8a8671500e518a8c29de8c00
+https://s3.amazonaws.com/models.huggingface.co/bert/bert-base-chinese-config.json not found in cache or force_download set to True, downloading to C:\Users\54367\AppData\Local\Temp\tmp4c590nud
+copying C:\Users\54367\AppData\Local\Temp\tmp4c590nud to cache at C:\Users\54367\.cache\torch\pytorch_transformers\8a3b1cfe5da58286e12a0f5d7d182b8d6eca88c08e26c332ee3817548cf7e60a.f12a4f986e43d8b328f5b067a641064d67b91597567a06c7b122d1ca7dfd9741
+creating metadata file for C:\Users\54367\.cache\torch\pytorch_transformers\8a3b1cfe5da58286e12a0f5d7d182b8d6eca88c08e26c332ee3817548cf7e60a.f12a4f986e43d8b328f5b067a641064d67b91597567a06c7b122d1ca7dfd9741
+removing temp file C:\Users\54367\AppData\Local\Temp\tmp4c590nud
+loading configuration file https://s3.amazonaws.com/models.huggingface.co/bert/bert-base-chinese-config.json from cache at C:\Users\54367\.cache\torch\pytorch_transformers\8a3b1cfe5da58286e12a0f5d7d182b8d6eca88c08e26c332ee3817548cf7e60a.f12a4f986e43d8b328f5b067a641064d67b91597567a06c7b122d1ca7dfd9741
+Model config {
+  "architectures": [
+    "BertForMaskedLM"
+  ],
+  "attention_probs_dropout_prob": 0.1,
+  "directionality": "bidi",
+  "finetuning_task": null,
+  "hidden_act": "gelu",
+  "hidden_dropout_prob": 0.1,
+  "hidden_size": 768,
+  "initializer_range": 0.02,
+  "intermediate_size": 3072,
+  "layer_norm_eps": 1e-12,
+  "max_position_embeddings": 512,
+  "model_type": "bert",
+  "num_attention_heads": 12,
+  "num_hidden_layers": 12,
+  "num_labels": 2,
+  "output_attentions": false,
+  "output_hidden_states": false,
+  "pad_token_id": 0,
+  "pooler_fc_size": 768,
+  "pooler_num_attention_heads": 12,
+  "pooler_num_fc_layers": 3,
+  "pooler_size_per_head": 128,
+  "pooler_type": "first_token_transform",
+  "pruned_heads": {},
+  "torchscript": false,
+  "type_vocab_size": 2,
+  "vocab_size": 21128
+}
+
+https://s3.amazonaws.com/models.huggingface.co/bert/bert-base-chinese-pytorch_model.bin not found in cache or force_download set to True, downloading to C:\Users\54367\AppData\Local\Temp\tmp1axcxx2k
+copying C:\Users\54367\AppData\Local\Temp\tmp1axcxx2k to cache at C:\Users\54367\.cache\torch\pytorch_transformers\b1b5e295889f2d0979ede9a78ad9cb5dc6a0e25ab7f9417b315f0a2c22f4683d.929717ca66a3ba9eb9ec2f85973c6398c54c38a4faa464636a491d7a705f7eb6
+creating metadata file for C:\Users\54367\.cache\torch\pytorch_transformers\b1b5e295889f2d0979ede9a78ad9cb5dc6a0e25ab7f9417b315f0a2c22f4683d.929717ca66a3ba9eb9ec2f85973c6398c54c38a4faa464636a491d7a705f7eb6
+removing temp file C:\Users\54367\AppData\Local\Temp\tmp1axcxx2k
+loading weights file https://s3.amazonaws.com/models.huggingface.co/bert/bert-base-chinese-pytorch_model.bin from cache at C:\Users\54367\.cache\torch\pytorch_transformers\b1b5e295889f2d0979ede9a78ad9cb5dc6a0e25ab7f9417b315f0a2c22f4683d.929717ca66a3ba9eb9ec2f85973c6398c54c38a4faa464636a491d7a705f7eb6
+>>> dataset: phone
+>>> output_dir: output
+>>> SRD: 5
+>>> learning_rate: 3e-05
+>>> use_unique_bert: True
+>>> use_bert_spc: False
+>>> local_context_focus: cdm
+>>> num_train_epochs: 5.0
+>>> train_batch_size: 4
+>>> dropout: 0.0
+>>> max_seq_length: 40
+>>> eval_batch_size: 32
+>>> eval_steps: 20
+>>> gradient_accumulation_steps: 1
+>>> device: cuda:0
+>>> seed: 1
+>>> bert_model: bert-base-chinese
+>>> data_dir: atepc_datasets/phone
+***** Running training *****
+  Num examples = 1988
+  Batch size = 4
+  Num steps = 2485
+################################################################################
+Train 1 Epoch1
+################################################################################
+################################################################################
+Train 1 Epoch2
+################################################################################
+################################################################################
+Train 1 Epoch3
+################################################################################
+################################################################################
+Train 1 Epoch4
+################################################################################
+********************************************************************************
+Train 1 Epoch4, Evaluate for atepc_datasets/phone
+steps 9
+APC_test_acc: 95.77(max: 95.77)  APC_test_f1: 95.02(max: 95.02)
+ATE_test_f1: 86.16(max:86.16)
+********************************************************************************
+********************************************************************************
+Train 1 Epoch4, Evaluate for atepc_datasets/phone
+steps 29
+APC_test_acc: 96.58(max: 96.58)  APC_test_f1: 95.99(max: 95.99)
+ATE_test_f1: 85.5(max:86.16)
+********************************************************************************
+********************************************************************************
+Train 1 Epoch4, Evaluate for atepc_datasets/phone
+steps 49
+APC_test_acc: 94.57(max: 96.58)  APC_test_f1: 93.83(max: 95.99)
+ATE_test_f1: 86.65(max:86.65)
+********************************************************************************
+********************************************************************************
+Train 1 Epoch4, Evaluate for atepc_datasets/phone
+steps 69
+APC_test_acc: 95.17(max: 96.58)  APC_test_f1: 94.47(max: 95.99)
+ATE_test_f1: 87.43(max:87.43)
+********************************************************************************
+********************************************************************************
+Train 1 Epoch4, Evaluate for atepc_datasets/phone
+steps 89
+APC_test_acc: 95.37(max: 96.58)  APC_test_f1: 94.69(max: 95.99)
+ATE_test_f1: 87.33(max:87.43)
+********************************************************************************
+********************************************************************************
+Train 1 Epoch4, Evaluate for atepc_datasets/phone
+steps 109
+APC_test_acc: 94.97(max: 96.58)  APC_test_f1: 94.25(max: 95.99)
+ATE_test_f1: 88.02(max:88.02)
+********************************************************************************
+********************************************************************************
+Train 1 Epoch4, Evaluate for atepc_datasets/phone
+steps 129
+APC_test_acc: 94.77(max: 96.58)  APC_test_f1: 93.97(max: 95.99)
+ATE_test_f1: 85.74(max:88.02)
+********************************************************************************
+********************************************************************************
+Train 1 Epoch4, Evaluate for atepc_datasets/phone
+steps 149
+APC_test_acc: 93.56(max: 96.58)  APC_test_f1: 92.74(max: 95.99)
+ATE_test_f1: 88.76(max:88.76)
+********************************************************************************
+********************************************************************************
+Train 1 Epoch4, Evaluate for atepc_datasets/phone
+steps 169
+APC_test_acc: 94.16(max: 96.58)  APC_test_f1: 93.09(max: 95.99)
+ATE_test_f1: 88.82(max:88.82)
+********************************************************************************
+********************************************************************************
+Train 1 Epoch4, Evaluate for atepc_datasets/phone
+steps 189
+APC_test_acc: 95.77(max: 96.58)  APC_test_f1: 95.14(max: 95.99)
+ATE_test_f1: 86.9(max:88.82)
+********************************************************************************
+********************************************************************************
+Train 1 Epoch4, Evaluate for atepc_datasets/phone
+steps 209
+APC_test_acc: 95.37(max: 96.58)  APC_test_f1: 94.69(max: 95.99)
+ATE_test_f1: 85.61(max:88.82)
+********************************************************************************
+********************************************************************************
+Train 1 Epoch4, Evaluate for atepc_datasets/phone
+steps 229
+APC_test_acc: 94.37(max: 96.58)  APC_test_f1: 93.57(max: 95.99)
+ATE_test_f1: 87.78(max:88.82)
+********************************************************************************
+********************************************************************************
+Train 1 Epoch4, Evaluate for atepc_datasets/phone
+steps 249
+APC_test_acc: 93.76(max: 96.58)  APC_test_f1: 92.94(max: 95.99)
+ATE_test_f1: 87.54(max:88.82)
+********************************************************************************
+********************************************************************************
+Train 1 Epoch4, Evaluate for atepc_datasets/phone
+steps 269
+APC_test_acc: 94.37(max: 96.58)  APC_test_f1: 93.46(max: 95.99)
+ATE_test_f1: 85.61(max:88.82)
+********************************************************************************
+********************************************************************************
+Train 1 Epoch4, Evaluate for atepc_datasets/phone
+steps 289
+APC_test_acc: 92.96(max: 96.58)  APC_test_f1: 91.84(max: 95.99)
+ATE_test_f1: 87.49(max:88.82)
+********************************************************************************
+********************************************************************************
+Train 1 Epoch4, Evaluate for atepc_datasets/phone
+steps 309
+APC_test_acc: 93.36(max: 96.58)  APC_test_f1: 92.46(max: 95.99)
+ATE_test_f1: 88.97(max:88.97)
+********************************************************************************
+********************************************************************************
+Train 1 Epoch4, Evaluate for atepc_datasets/phone
+steps 329
+APC_test_acc: 94.16(max: 96.58)  APC_test_f1: 93.28(max: 95.99)
+ATE_test_f1: 86.31(max:88.97)
+********************************************************************************
+********************************************************************************
+Train 1 Epoch4, Evaluate for atepc_datasets/phone
+steps 349
+APC_test_acc: 94.37(max: 96.58)  APC_test_f1: 93.48(max: 95.99)
+ATE_test_f1: 87.5(max:88.97)
+********************************************************************************
+********************************************************************************
+Train 1 Epoch4, Evaluate for atepc_datasets/phone
+steps 369
+APC_test_acc: 95.37(max: 96.58)  APC_test_f1: 94.67(max: 95.99)
+ATE_test_f1: 88.52(max:88.97)
+********************************************************************************
+********************************************************************************
+Train 1 Epoch4, Evaluate for atepc_datasets/phone
+steps 389
+APC_test_acc: 95.77(max: 96.58)  APC_test_f1: 95.07(max: 95.99)
+ATE_test_f1: 89.35(max:89.35)
+********************************************************************************
+********************************************************************************
+Train 1 Epoch4, Evaluate for atepc_datasets/phone
+steps 409
+APC_test_acc: 94.77(max: 96.58)  APC_test_f1: 93.97(max: 95.99)
+ATE_test_f1: 88.71(max:89.35)
+********************************************************************************
+********************************************************************************
+Train 1 Epoch4, Evaluate for atepc_datasets/phone
+steps 429
+APC_test_acc: 94.97(max: 96.58)  APC_test_f1: 94.13(max: 95.99)
+ATE_test_f1: 87.97(max:89.35)
+********************************************************************************
+********************************************************************************
+Train 1 Epoch4, Evaluate for atepc_datasets/phone
+steps 449
+APC_test_acc: 95.37(max: 96.58)  APC_test_f1: 94.58(max: 95.99)
+ATE_test_f1: 85.37(max:89.35)
+********************************************************************************
+********************************************************************************
+Train 1 Epoch4, Evaluate for atepc_datasets/phone
+steps 469
+APC_test_acc: 95.98(max: 96.58)  APC_test_f1: 95.28(max: 95.99)
+ATE_test_f1: 88.41(max:89.35)
+********************************************************************************
+********************************************************************************
+Train 1 Epoch4, Evaluate for atepc_datasets/phone
+steps 489
+APC_test_acc: 95.17(max: 96.58)  APC_test_f1: 94.39(max: 95.99)
+ATE_test_f1: 87.82(max:89.35)
+********************************************************************************
+################################################################################
+Train 1 Epoch5
+################################################################################
+********************************************************************************
+Train 1 Epoch5, Evaluate for atepc_datasets/phone
+steps 12
+APC_test_acc: 95.57(max: 96.58)  APC_test_f1: 94.9(max: 95.99)
+ATE_test_f1: 86.05(max:89.35)
+********************************************************************************
+********************************************************************************
+Train 1 Epoch5, Evaluate for atepc_datasets/phone
+steps 32
+APC_test_acc: 96.38(max: 96.58)  APC_test_f1: 95.78(max: 95.99)
+ATE_test_f1: 88.48(max:89.35)
+********************************************************************************
+********************************************************************************
+Train 1 Epoch5, Evaluate for atepc_datasets/phone
+steps 52
+APC_test_acc: 95.77(max: 96.58)  APC_test_f1: 95.0(max: 95.99)
+ATE_test_f1: 87.6(max:89.35)
+********************************************************************************
+********************************************************************************
+Train 1 Epoch5, Evaluate for atepc_datasets/phone
+steps 72
+APC_test_acc: 96.58(max: 96.58)  APC_test_f1: 96.04(max: 96.04)
+ATE_test_f1: 87.33(max:89.35)
+********************************************************************************
+********************************************************************************
+Train 1 Epoch5, Evaluate for atepc_datasets/phone
+steps 92
+APC_test_acc: 95.98(max: 96.58)  APC_test_f1: 95.3(max: 96.04)
+ATE_test_f1: 90.13(max:90.13)
+********************************************************************************
+********************************************************************************
+Train 1 Epoch5, Evaluate for atepc_datasets/phone
+steps 112
+APC_test_acc: 95.98(max: 96.58)  APC_test_f1: 95.3(max: 96.04)
+ATE_test_f1: 89.35(max:90.13)
+********************************************************************************
+********************************************************************************
+Train 1 Epoch5, Evaluate for atepc_datasets/phone
+steps 132
+APC_test_acc: 96.18(max: 96.58)  APC_test_f1: 95.52(max: 96.04)
+ATE_test_f1: 89.74(max:90.13)
+********************************************************************************
+********************************************************************************
+Train 1 Epoch5, Evaluate for atepc_datasets/phone
+steps 152
+APC_test_acc: 95.77(max: 96.58)  APC_test_f1: 95.09(max: 96.04)
+ATE_test_f1: 88.42(max:90.13)
+********************************************************************************
+********************************************************************************
+Train 1 Epoch5, Evaluate for atepc_datasets/phone
+steps 172
+APC_test_acc: 95.98(max: 96.58)  APC_test_f1: 95.33(max: 96.04)
+ATE_test_f1: 83.27(max:90.13)
+********************************************************************************
+********************************************************************************
+Train 1 Epoch5, Evaluate for atepc_datasets/phone
+steps 192
+APC_test_acc: 95.98(max: 96.58)  APC_test_f1: 95.38(max: 96.04)
+ATE_test_f1: 85.08(max:90.13)
+********************************************************************************
+********************************************************************************
+Train 1 Epoch5, Evaluate for atepc_datasets/phone
+steps 212
+APC_test_acc: 94.37(max: 96.58)  APC_test_f1: 93.61(max: 96.04)
+ATE_test_f1: 86.71(max:90.13)
+********************************************************************************
+********************************************************************************
+Train 1 Epoch5, Evaluate for atepc_datasets/phone
+steps 232
+APC_test_acc: 96.38(max: 96.58)  APC_test_f1: 95.8(max: 96.04)
+ATE_test_f1: 88.35(max:90.13)
+********************************************************************************
+********************************************************************************
+Train 1 Epoch5, Evaluate for atepc_datasets/phone
+steps 252
+APC_test_acc: 96.18(max: 96.58)  APC_test_f1: 95.57(max: 96.04)
+ATE_test_f1: 88.54(max:90.13)
+********************************************************************************
+********************************************************************************
+Train 1 Epoch5, Evaluate for atepc_datasets/phone
+steps 272
+APC_test_acc: 95.57(max: 96.58)  APC_test_f1: 94.88(max: 96.04)
+ATE_test_f1: 88.74(max:90.13)
+********************************************************************************
+********************************************************************************
+Train 1 Epoch5, Evaluate for atepc_datasets/phone
+steps 292
+APC_test_acc: 95.37(max: 96.58)  APC_test_f1: 94.64(max: 96.04)
+ATE_test_f1: 85.1(max:90.13)
+********************************************************************************
+********************************************************************************
+Train 1 Epoch5, Evaluate for atepc_datasets/phone
+steps 312
+APC_test_acc: 95.57(max: 96.58)  APC_test_f1: 94.86(max: 96.04)
+ATE_test_f1: 86.56(max:90.13)
+********************************************************************************
+********************************************************************************
+Train 1 Epoch5, Evaluate for atepc_datasets/phone
+steps 332
+APC_test_acc: 95.57(max: 96.58)  APC_test_f1: 94.83(max: 96.04)
+ATE_test_f1: 85.6(max:90.13)
+********************************************************************************
+********************************************************************************
+Train 1 Epoch5, Evaluate for atepc_datasets/phone
+steps 352
+APC_test_acc: 95.17(max: 96.58)  APC_test_f1: 94.29(max: 96.04)
+ATE_test_f1: 86.86(max:90.13)
+********************************************************************************
+********************************************************************************
+Train 1 Epoch5, Evaluate for atepc_datasets/phone
+steps 372
+APC_test_acc: 95.57(max: 96.58)  APC_test_f1: 94.86(max: 96.04)
+ATE_test_f1: 88.39(max:90.13)
+********************************************************************************
+********************************************************************************
+Train 1 Epoch5, Evaluate for atepc_datasets/phone
+steps 392
+APC_test_acc: 95.37(max: 96.58)  APC_test_f1: 94.62(max: 96.04)
+ATE_test_f1: 86.35(max:90.13)
+********************************************************************************
+********************************************************************************
+Train 1 Epoch5, Evaluate for atepc_datasets/phone
+steps 412
+APC_test_acc: 95.57(max: 96.58)  APC_test_f1: 94.84(max: 96.04)
+ATE_test_f1: 87.71(max:90.13)
+********************************************************************************
+********************************************************************************
+Train 1 Epoch5, Evaluate for atepc_datasets/phone
+steps 432
+APC_test_acc: 95.57(max: 96.58)  APC_test_f1: 94.84(max: 96.04)
+ATE_test_f1: 89.28(max:90.13)
+********************************************************************************
+********************************************************************************
+Train 1 Epoch5, Evaluate for atepc_datasets/phone
+steps 452
+APC_test_acc: 95.57(max: 96.58)  APC_test_f1: 94.84(max: 96.04)
+ATE_test_f1: 86.08(max:90.13)
+********************************************************************************
+********************************************************************************
+Train 1 Epoch5, Evaluate for atepc_datasets/phone
+steps 472
+APC_test_acc: 95.37(max: 96.58)  APC_test_f1: 94.6(max: 96.04)
+ATE_test_f1: 86.13(max:90.13)
+********************************************************************************
+********************************************************************************
+Train 1 Epoch5, Evaluate for atepc_datasets/phone
+steps 492
+APC_test_acc: 95.17(max: 96.58)  APC_test_f1: 94.37(max: 96.04)
+ATE_test_f1: 86.73(max:90.13)
+********************************************************************************
+max_ate_test_f1:90.13 max_apc_test_acc: 96.58	max_apc_test_f1: 96.04 	
+--------------------------------------------------------------------------------
+Config 2 (totally 4 configs)
+No.1 training process of 1
+loading file https://s3.amazonaws.com/models.huggingface.co/bert/bert-base-chinese-vocab.txt from cache at C:\Users\54367\.cache\torch\pytorch_transformers\8a0c070123c1f794c42a29c6904beb7c1b8715741e235bee04aca2c7636fc83f.9b42061518a39ca00b8b52059fd2bede8daa613f8a8671500e518a8c29de8c00
+loading configuration file https://s3.amazonaws.com/models.huggingface.co/bert/bert-base-chinese-config.json from cache at C:\Users\54367\.cache\torch\pytorch_transformers\8a3b1cfe5da58286e12a0f5d7d182b8d6eca88c08e26c332ee3817548cf7e60a.f12a4f986e43d8b328f5b067a641064d67b91597567a06c7b122d1ca7dfd9741
+Model config {
+  "architectures": [
+    "BertForMaskedLM"
+  ],
+  "attention_probs_dropout_prob": 0.1,
+  "directionality": "bidi",
+  "finetuning_task": null,
+  "hidden_act": "gelu",
+  "hidden_dropout_prob": 0.1,
+  "hidden_size": 768,
+  "initializer_range": 0.02,
+  "intermediate_size": 3072,
+  "layer_norm_eps": 1e-12,
+  "max_position_embeddings": 512,
+  "model_type": "bert",
+  "num_attention_heads": 12,
+  "num_hidden_layers": 12,
+  "num_labels": 2,
+  "output_attentions": false,
+  "output_hidden_states": false,
+  "pad_token_id": 0,
+  "pooler_fc_size": 768,
+  "pooler_num_attention_heads": 12,
+  "pooler_num_fc_layers": 3,
+  "pooler_size_per_head": 128,
+  "pooler_type": "first_token_transform",
+  "pruned_heads": {},
+  "torchscript": false,
+  "type_vocab_size": 2,
+  "vocab_size": 21128
+}
+
+loading weights file https://s3.amazonaws.com/models.huggingface.co/bert/bert-base-chinese-pytorch_model.bin from cache at C:\Users\54367\.cache\torch\pytorch_transformers\b1b5e295889f2d0979ede9a78ad9cb5dc6a0e25ab7f9417b315f0a2c22f4683d.929717ca66a3ba9eb9ec2f85973c6398c54c38a4faa464636a491d7a705f7eb6
+>>> dataset: car
+>>> output_dir: output
+>>> SRD: 5
+>>> learning_rate: 3e-05
+>>> use_unique_bert: True
+>>> use_bert_spc: False
+>>> local_context_focus: cdw
+>>> num_train_epochs: 5.0
+>>> train_batch_size: 4
+>>> dropout: 0.0
+>>> max_seq_length: 40
+>>> eval_batch_size: 32
+>>> eval_steps: 20
+>>> gradient_accumulation_steps: 1
+>>> device: cuda:0
+>>> seed: 1
+>>> bert_model: bert-base-chinese
+>>> data_dir: atepc_datasets/car
+***** Running training *****
+  Num examples = 921
+  Batch size = 4
+  Num steps = 1150
+################################################################################
+Train 1 Epoch1
+################################################################################
+################################################################################
+Train 1 Epoch2
+################################################################################
+################################################################################
+Train 1 Epoch3
+################################################################################
+################################################################################
+Train 1 Epoch4
+################################################################################
+********************************************************************************
+Train 1 Epoch4, Evaluate for atepc_datasets/car
+steps 7
+APC_test_acc: 94.78(max: 94.78)  APC_test_f1: 93.63(max: 93.63)
+ATE_test_f1: 83.62(max:83.62)
+********************************************************************************
+********************************************************************************
+Train 1 Epoch4, Evaluate for atepc_datasets/car
+steps 27
+APC_test_acc: 94.78(max: 94.78)  APC_test_f1: 93.63(max: 93.63)
+ATE_test_f1: 84.3(max:84.3)
+********************************************************************************
+********************************************************************************
+Train 1 Epoch4, Evaluate for atepc_datasets/car
+steps 47
+APC_test_acc: 96.09(max: 96.09)  APC_test_f1: 95.15(max: 95.15)
+ATE_test_f1: 82.23(max:84.3)
+********************************************************************************
+********************************************************************************
+Train 1 Epoch4, Evaluate for atepc_datasets/car
+steps 67
+APC_test_acc: 96.09(max: 96.09)  APC_test_f1: 95.15(max: 95.15)
+ATE_test_f1: 82.11(max:84.3)
+********************************************************************************
+********************************************************************************
+Train 1 Epoch4, Evaluate for atepc_datasets/car
+steps 87
+APC_test_acc: 95.65(max: 96.09)  APC_test_f1: 94.69(max: 95.15)
+ATE_test_f1: 82.11(max:84.3)
+********************************************************************************
+********************************************************************************
+Train 1 Epoch4, Evaluate for atepc_datasets/car
+steps 107
+APC_test_acc: 93.91(max: 96.09)  APC_test_f1: 92.69(max: 95.15)
+ATE_test_f1: 84.47(max:84.47)
+********************************************************************************
+********************************************************************************
+Train 1 Epoch4, Evaluate for atepc_datasets/car
+steps 127
+APC_test_acc: 94.78(max: 96.09)  APC_test_f1: 93.51(max: 95.15)
+ATE_test_f1: 81.72(max:84.47)
+********************************************************************************
+********************************************************************************
+Train 1 Epoch4, Evaluate for atepc_datasets/car
+steps 147
+APC_test_acc: 95.22(max: 96.09)  APC_test_f1: 94.02(max: 95.15)
+ATE_test_f1: 86.02(max:86.02)
+********************************************************************************
+********************************************************************************
+Train 1 Epoch4, Evaluate for atepc_datasets/car
+steps 167
+APC_test_acc: 93.91(max: 96.09)  APC_test_f1: 92.63(max: 95.15)
+ATE_test_f1: 88.28(max:88.28)
+********************************************************************************
+********************************************************************************
+Train 1 Epoch4, Evaluate for atepc_datasets/car
+steps 187
+APC_test_acc: 95.22(max: 96.09)  APC_test_f1: 94.02(max: 95.15)
+ATE_test_f1: 87.05(max:88.28)
+********************************************************************************
+********************************************************************************
+Train 1 Epoch4, Evaluate for atepc_datasets/car
+steps 207
+APC_test_acc: 92.61(max: 96.09)  APC_test_f1: 91.44(max: 95.15)
+ATE_test_f1: 86.32(max:88.28)
+********************************************************************************
+********************************************************************************
+Train 1 Epoch4, Evaluate for atepc_datasets/car
+steps 227
+APC_test_acc: 95.22(max: 96.09)  APC_test_f1: 94.07(max: 95.15)
+ATE_test_f1: 83.64(max:88.28)
+********************************************************************************
+################################################################################
+Train 1 Epoch5
+################################################################################
+********************************************************************************
+Train 1 Epoch5, Evaluate for atepc_datasets/car
+steps 16
+APC_test_acc: 93.91(max: 96.09)  APC_test_f1: 92.19(max: 95.15)
+ATE_test_f1: 77.61(max:88.28)
+********************************************************************************
+********************************************************************************
+Train 1 Epoch5, Evaluate for atepc_datasets/car
+steps 36
+APC_test_acc: 86.96(max: 96.09)  APC_test_f1: 81.36(max: 95.15)
+ATE_test_f1: 81.13(max:88.28)
+********************************************************************************
+********************************************************************************
+Train 1 Epoch5, Evaluate for atepc_datasets/car
+steps 56
+APC_test_acc: 95.65(max: 96.09)  APC_test_f1: 94.78(max: 95.15)
+ATE_test_f1: 80.5(max:88.28)
+********************************************************************************
+********************************************************************************
+Train 1 Epoch5, Evaluate for atepc_datasets/car
+steps 76
+APC_test_acc: 90.43(max: 96.09)  APC_test_f1: 87.17(max: 95.15)
+ATE_test_f1: 82.55(max:88.28)
+********************************************************************************
+********************************************************************************
+Train 1 Epoch5, Evaluate for atepc_datasets/car
+steps 96
+APC_test_acc: 93.04(max: 96.09)  APC_test_f1: 91.42(max: 95.15)
+ATE_test_f1: 82.5(max:88.28)
+********************************************************************************
+********************************************************************************
+Train 1 Epoch5, Evaluate for atepc_datasets/car
+steps 116
+APC_test_acc: 93.48(max: 96.09)  APC_test_f1: 92.14(max: 95.15)
+ATE_test_f1: 80.08(max:88.28)
+********************************************************************************
+********************************************************************************
+Train 1 Epoch5, Evaluate for atepc_datasets/car
+steps 136
+APC_test_acc: 90.87(max: 96.09)  APC_test_f1: 87.83(max: 95.15)
+ATE_test_f1: 82.48(max:88.28)
+********************************************************************************
+********************************************************************************
+Train 1 Epoch5, Evaluate for atepc_datasets/car
+steps 156
+APC_test_acc: 93.91(max: 96.09)  APC_test_f1: 92.19(max: 95.15)
+ATE_test_f1: 85.71(max:88.28)
+********************************************************************************
+********************************************************************************
+Train 1 Epoch5, Evaluate for atepc_datasets/car
+steps 176
+APC_test_acc: 95.65(max: 96.09)  APC_test_f1: 94.78(max: 95.15)
+ATE_test_f1: 88.56(max:88.56)
+********************************************************************************
+********************************************************************************
+Train 1 Epoch5, Evaluate for atepc_datasets/car
+steps 196
+APC_test_acc: 96.09(max: 96.09)  APC_test_f1: 95.15(max: 95.15)
+ATE_test_f1: 86.2(max:88.56)
+********************************************************************************
+********************************************************************************
+Train 1 Epoch5, Evaluate for atepc_datasets/car
+steps 216
+APC_test_acc: 94.78(max: 96.09)  APC_test_f1: 93.44(max: 95.15)
+ATE_test_f1: 88.32(max:88.56)
+********************************************************************************
+max_ate_test_f1:88.56 max_apc_test_acc: 96.09	max_apc_test_f1: 95.15 	
+--------------------------------------------------------------------------------
+Config 3 (totally 4 configs)
+No.1 training process of 1
+loading file https://s3.amazonaws.com/models.huggingface.co/bert/bert-base-chinese-vocab.txt from cache at C:\Users\54367\.cache\torch\pytorch_transformers\8a0c070123c1f794c42a29c6904beb7c1b8715741e235bee04aca2c7636fc83f.9b42061518a39ca00b8b52059fd2bede8daa613f8a8671500e518a8c29de8c00
+loading configuration file https://s3.amazonaws.com/models.huggingface.co/bert/bert-base-chinese-config.json from cache at C:\Users\54367\.cache\torch\pytorch_transformers\8a3b1cfe5da58286e12a0f5d7d182b8d6eca88c08e26c332ee3817548cf7e60a.f12a4f986e43d8b328f5b067a641064d67b91597567a06c7b122d1ca7dfd9741
+Model config {
+  "architectures": [
+    "BertForMaskedLM"
+  ],
+  "attention_probs_dropout_prob": 0.1,
+  "directionality": "bidi",
+  "finetuning_task": null,
+  "hidden_act": "gelu",
+  "hidden_dropout_prob": 0.1,
+  "hidden_size": 768,
+  "initializer_range": 0.02,
+  "intermediate_size": 3072,
+  "layer_norm_eps": 1e-12,
+  "max_position_embeddings": 512,
+  "model_type": "bert",
+  "num_attention_heads": 12,
+  "num_hidden_layers": 12,
+  "num_labels": 2,
+  "output_attentions": false,
+  "output_hidden_states": false,
+  "pad_token_id": 0,
+  "pooler_fc_size": 768,
+  "pooler_num_attention_heads": 12,
+  "pooler_num_fc_layers": 3,
+  "pooler_size_per_head": 128,
+  "pooler_type": "first_token_transform",
+  "pruned_heads": {},
+  "torchscript": false,
+  "type_vocab_size": 2,
+  "vocab_size": 21128
+}
+
+loading weights file https://s3.amazonaws.com/models.huggingface.co/bert/bert-base-chinese-pytorch_model.bin from cache at C:\Users\54367\.cache\torch\pytorch_transformers\b1b5e295889f2d0979ede9a78ad9cb5dc6a0e25ab7f9417b315f0a2c22f4683d.929717ca66a3ba9eb9ec2f85973c6398c54c38a4faa464636a491d7a705f7eb6
+>>> dataset: notebook
+>>> output_dir: output
+>>> SRD: 5
+>>> learning_rate: 3e-05
+>>> use_unique_bert: True
+>>> use_bert_spc: False
+>>> local_context_focus: fusion
+>>> num_train_epochs: 5.0
+>>> train_batch_size: 4
+>>> dropout: 0.0
+>>> max_seq_length: 40
+>>> eval_batch_size: 32
+>>> eval_steps: 20
+>>> gradient_accumulation_steps: 1
+>>> device: cuda:0
+>>> seed: 1
+>>> bert_model: bert-base-chinese
+>>> data_dir: atepc_datasets/notebook
+***** Running training *****
+  Num examples = 496
+  Batch size = 4
+  Num steps = 620
+################################################################################
+Train 1 Epoch1
+################################################################################
+################################################################################
+Train 1 Epoch2
+################################################################################
+################################################################################
+Train 1 Epoch3
+################################################################################
+################################################################################
+Train 1 Epoch4
+################################################################################
+********************************************************************************
+Train 1 Epoch4, Evaluate for atepc_datasets/notebook
+steps 8
+APC_test_acc: 92.68(max: 92.68)  APC_test_f1: 91.49(max: 91.49)
+ATE_test_f1: 74.71(max:74.71)
+********************************************************************************
+********************************************************************************
+Train 1 Epoch4, Evaluate for atepc_datasets/notebook
+steps 28
+APC_test_acc: 91.87(max: 92.68)  APC_test_f1: 90.61(max: 91.49)
+ATE_test_f1: 81.85(max:81.85)
+********************************************************************************
+********************************************************************************
+Train 1 Epoch4, Evaluate for atepc_datasets/notebook
+steps 48
+APC_test_acc: 86.18(max: 92.68)  APC_test_f1: 82.23(max: 91.49)
+ATE_test_f1: 76.8(max:81.85)
+********************************************************************************
+********************************************************************************
+Train 1 Epoch4, Evaluate for atepc_datasets/notebook
+steps 68
+APC_test_acc: 84.55(max: 92.68)  APC_test_f1: 82.73(max: 91.49)
+ATE_test_f1: 75.19(max:81.85)
+********************************************************************************
+********************************************************************************
+Train 1 Epoch4, Evaluate for atepc_datasets/notebook
+steps 88
+APC_test_acc: 90.24(max: 92.68)  APC_test_f1: 88.4(max: 91.49)
+ATE_test_f1: 78.79(max:81.85)
+********************************************************************************
+********************************************************************************
+Train 1 Epoch4, Evaluate for atepc_datasets/notebook
+steps 108
+APC_test_acc: 91.06(max: 92.68)  APC_test_f1: 89.45(max: 91.49)
+ATE_test_f1: 78.71(max:81.85)
+********************************************************************************
+################################################################################
+Train 1 Epoch5
+################################################################################
+********************************************************************************
+Train 1 Epoch5, Evaluate for atepc_datasets/notebook
+steps 4
+APC_test_acc: 89.43(max: 92.68)  APC_test_f1: 87.88(max: 91.49)
+ATE_test_f1: 82.21(max:82.21)
+********************************************************************************
+********************************************************************************
+Train 1 Epoch5, Evaluate for atepc_datasets/notebook
+steps 24
+APC_test_acc: 92.68(max: 92.68)  APC_test_f1: 91.37(max: 91.49)
+ATE_test_f1: 74.4(max:82.21)
+********************************************************************************
+********************************************************************************
+Train 1 Epoch5, Evaluate for atepc_datasets/notebook
+steps 44
+APC_test_acc: 91.87(max: 92.68)  APC_test_f1: 90.34(max: 91.49)
+ATE_test_f1: 82.49(max:82.49)
+********************************************************************************
+********************************************************************************
+Train 1 Epoch5, Evaluate for atepc_datasets/notebook
+steps 64
+APC_test_acc: 90.24(max: 92.68)  APC_test_f1: 87.58(max: 91.49)
+ATE_test_f1: 81.25(max:82.49)
+********************************************************************************
+********************************************************************************
+Train 1 Epoch5, Evaluate for atepc_datasets/notebook
+steps 84
+APC_test_acc: 91.87(max: 92.68)  APC_test_f1: 90.34(max: 91.49)
+ATE_test_f1: 82.21(max:82.49)
+********************************************************************************
+********************************************************************************
+Train 1 Epoch5, Evaluate for atepc_datasets/notebook
+steps 104
+APC_test_acc: 91.87(max: 92.68)  APC_test_f1: 90.34(max: 91.49)
+ATE_test_f1: 81.1(max:82.49)
+********************************************************************************
+********************************************************************************
+Train 1 Epoch5, Evaluate for atepc_datasets/notebook
+steps 124
+APC_test_acc: 91.87(max: 92.68)  APC_test_f1: 90.02(max: 91.49)
+ATE_test_f1: 84.37(max:84.37)
+********************************************************************************
+max_ate_test_f1:84.37 max_apc_test_acc: 92.68	max_apc_test_f1: 91.49 	
+--------------------------------------------------------------------------------
+Config 4 (totally 4 configs)
+No.1 training process of 1
+loading file https://s3.amazonaws.com/models.huggingface.co/bert/bert-base-chinese-vocab.txt from cache at C:\Users\54367\.cache\torch\pytorch_transformers\8a0c070123c1f794c42a29c6904beb7c1b8715741e235bee04aca2c7636fc83f.9b42061518a39ca00b8b52059fd2bede8daa613f8a8671500e518a8c29de8c00
+loading configuration file https://s3.amazonaws.com/models.huggingface.co/bert/bert-base-chinese-config.json from cache at C:\Users\54367\.cache\torch\pytorch_transformers\8a3b1cfe5da58286e12a0f5d7d182b8d6eca88c08e26c332ee3817548cf7e60a.f12a4f986e43d8b328f5b067a641064d67b91597567a06c7b122d1ca7dfd9741
+Model config {
+  "architectures": [
+    "BertForMaskedLM"
+  ],
+  "attention_probs_dropout_prob": 0.1,
+  "directionality": "bidi",
+  "finetuning_task": null,
+  "hidden_act": "gelu",
+  "hidden_dropout_prob": 0.1,
+  "hidden_size": 768,
+  "initializer_range": 0.02,
+  "intermediate_size": 3072,
+  "layer_norm_eps": 1e-12,
+  "max_position_embeddings": 512,
+  "model_type": "bert",
+  "num_attention_heads": 12,
+  "num_hidden_layers": 12,
+  "num_labels": 2,
+  "output_attentions": false,
+  "output_hidden_states": false,
+  "pad_token_id": 0,
+  "pooler_fc_size": 768,
+  "pooler_num_attention_heads": 12,
+  "pooler_num_fc_layers": 3,
+  "pooler_size_per_head": 128,
+  "pooler_type": "first_token_transform",
+  "pruned_heads": {},
+  "torchscript": false,
+  "type_vocab_size": 2,
+  "vocab_size": 21128
+}
+
+loading weights file https://s3.amazonaws.com/models.huggingface.co/bert/bert-base-chinese-pytorch_model.bin from cache at C:\Users\54367\.cache\torch\pytorch_transformers\b1b5e295889f2d0979ede9a78ad9cb5dc6a0e25ab7f9417b315f0a2c22f4683d.929717ca66a3ba9eb9ec2f85973c6398c54c38a4faa464636a491d7a705f7eb6
+>>> dataset: camera
+>>> output_dir: output
+>>> SRD: 5
+>>> learning_rate: 3e-05
+>>> use_unique_bert: True
+>>> use_bert_spc: False
+>>> local_context_focus: cdm
+>>> num_train_epochs: 5.0
+>>> train_batch_size: 4
+>>> dropout: 0.0
+>>> max_seq_length: 40
+>>> eval_batch_size: 32
+>>> eval_steps: 20
+>>> gradient_accumulation_steps: 1
+>>> device: cuda:0
+>>> seed: 1
+>>> bert_model: bert-base-chinese
+>>> data_dir: atepc_datasets/camera
+***** Running training *****
+  Num examples = 1743
+  Batch size = 4
+  Num steps = 2175
+################################################################################
+Train 1 Epoch1
+################################################################################
+################################################################################
+Train 1 Epoch2
+################################################################################
+################################################################################
+Train 1 Epoch3
+################################################################################
+################################################################################
+Train 1 Epoch4
+################################################################################
+********************************************************************************
+Train 1 Epoch4, Evaluate for atepc_datasets/camera
+steps 12
+APC_test_acc: 92.41(max: 92.41)  APC_test_f1: 90.63(max: 90.63)
+ATE_test_f1: 83.61(max:83.61)
+********************************************************************************
+********************************************************************************
+Train 1 Epoch4, Evaluate for atepc_datasets/camera
+steps 32
+APC_test_acc: 93.33(max: 93.33)  APC_test_f1: 91.68(max: 91.68)
+ATE_test_f1: 83.71(max:83.71)
+********************************************************************************
+********************************************************************************
+Train 1 Epoch4, Evaluate for atepc_datasets/camera
+steps 52
+APC_test_acc: 94.02(max: 94.02)  APC_test_f1: 92.36(max: 92.36)
+ATE_test_f1: 82.49(max:83.71)
+********************************************************************************
+********************************************************************************
+Train 1 Epoch4, Evaluate for atepc_datasets/camera
+steps 72
+APC_test_acc: 94.71(max: 94.71)  APC_test_f1: 92.94(max: 92.94)
+ATE_test_f1: 86.54(max:86.54)
+********************************************************************************
+********************************************************************************
+Train 1 Epoch4, Evaluate for atepc_datasets/camera
+steps 92
+APC_test_acc: 93.79(max: 94.71)  APC_test_f1: 91.95(max: 92.94)
+ATE_test_f1: 87.4(max:87.4)
+********************************************************************************
+********************************************************************************
+Train 1 Epoch4, Evaluate for atepc_datasets/camera
+steps 112
+APC_test_acc: 93.79(max: 94.71)  APC_test_f1: 92.0(max: 92.94)
+ATE_test_f1: 88.13(max:88.13)
+********************************************************************************
+********************************************************************************
+Train 1 Epoch4, Evaluate for atepc_datasets/camera
+steps 132
+APC_test_acc: 93.56(max: 94.71)  APC_test_f1: 91.82(max: 92.94)
+ATE_test_f1: 87.32(max:88.13)
+********************************************************************************
+********************************************************************************
+Train 1 Epoch4, Evaluate for atepc_datasets/camera
+steps 152
+APC_test_acc: 89.43(max: 94.71)  APC_test_f1: 87.38(max: 92.94)
+ATE_test_f1: 84.32(max:88.13)
+********************************************************************************
+********************************************************************************
+Train 1 Epoch4, Evaluate for atepc_datasets/camera
+steps 172
+APC_test_acc: 93.79(max: 94.71)  APC_test_f1: 92.17(max: 92.94)
+ATE_test_f1: 84.58(max:88.13)
+********************************************************************************
+********************************************************************************
+Train 1 Epoch4, Evaluate for atepc_datasets/camera
+steps 192
+APC_test_acc: 93.56(max: 94.71)  APC_test_f1: 91.73(max: 92.94)
+ATE_test_f1: 86.15(max:88.13)
+********************************************************************************
+********************************************************************************
+Train 1 Epoch4, Evaluate for atepc_datasets/camera
+steps 212
+APC_test_acc: 93.56(max: 94.71)  APC_test_f1: 91.73(max: 92.94)
+ATE_test_f1: 87.57(max:88.13)
+********************************************************************************
+********************************************************************************
+Train 1 Epoch4, Evaluate for atepc_datasets/camera
+steps 232
+APC_test_acc: 93.56(max: 94.71)  APC_test_f1: 91.48(max: 92.94)
+ATE_test_f1: 87.05(max:88.13)
+********************************************************************************
+********************************************************************************
+Train 1 Epoch4, Evaluate for atepc_datasets/camera
+steps 252
+APC_test_acc: 93.1(max: 94.71)  APC_test_f1: 90.52(max: 92.94)
+ATE_test_f1: 87.53(max:88.13)
+********************************************************************************
+********************************************************************************
+Train 1 Epoch4, Evaluate for atepc_datasets/camera
+steps 272
+APC_test_acc: 93.1(max: 94.71)  APC_test_f1: 90.82(max: 92.94)
+ATE_test_f1: 86.52(max:88.13)
+********************************************************************************
+********************************************************************************
+Train 1 Epoch4, Evaluate for atepc_datasets/camera
+steps 292
+APC_test_acc: 93.33(max: 94.71)  APC_test_f1: 91.45(max: 92.94)
+ATE_test_f1: 87.91(max:88.13)
+********************************************************************************
+********************************************************************************
+Train 1 Epoch4, Evaluate for atepc_datasets/camera
+steps 312
+APC_test_acc: 93.1(max: 94.71)  APC_test_f1: 90.93(max: 92.94)
+ATE_test_f1: 87.46(max:88.13)
+********************************************************************************
+********************************************************************************
+Train 1 Epoch4, Evaluate for atepc_datasets/camera
+steps 332
+APC_test_acc: 92.41(max: 94.71)  APC_test_f1: 89.87(max: 92.94)
+ATE_test_f1: 79.48(max:88.13)
+********************************************************************************
+********************************************************************************
+Train 1 Epoch4, Evaluate for atepc_datasets/camera
+steps 352
+APC_test_acc: 92.87(max: 94.71)  APC_test_f1: 90.65(max: 92.94)
+ATE_test_f1: 81.26(max:88.13)
+********************************************************************************
+********************************************************************************
+Train 1 Epoch4, Evaluate for atepc_datasets/camera
+steps 372
+APC_test_acc: 93.33(max: 94.71)  APC_test_f1: 91.2(max: 92.94)
+ATE_test_f1: 84.91(max:88.13)
+********************************************************************************
+********************************************************************************
+Train 1 Epoch4, Evaluate for atepc_datasets/camera
+steps 392
+APC_test_acc: 92.87(max: 94.71)  APC_test_f1: 90.42(max: 92.94)
+ATE_test_f1: 79.91(max:88.13)
+********************************************************************************
+********************************************************************************
+Train 1 Epoch4, Evaluate for atepc_datasets/camera
+steps 412
+APC_test_acc: 92.41(max: 94.71)  APC_test_f1: 89.74(max: 92.94)
+ATE_test_f1: 79.96(max:88.13)
+********************************************************************************
+********************************************************************************
+Train 1 Epoch4, Evaluate for atepc_datasets/camera
+steps 432
+APC_test_acc: 93.33(max: 94.71)  APC_test_f1: 91.04(max: 92.94)
+ATE_test_f1: 85.39(max:88.13)
+********************************************************************************
+################################################################################
+Train 1 Epoch5
+################################################################################
+********************************************************************************
+Train 1 Epoch5, Evaluate for atepc_datasets/camera
+steps 16
+APC_test_acc: 92.64(max: 94.71)  APC_test_f1: 90.65(max: 92.94)
+ATE_test_f1: 81.79(max:88.13)
+********************************************************************************
+********************************************************************************
+Train 1 Epoch5, Evaluate for atepc_datasets/camera
+steps 36
+APC_test_acc: 91.26(max: 94.71)  APC_test_f1: 89.18(max: 92.94)
+ATE_test_f1: 82.94(max:88.13)
+********************************************************************************
+********************************************************************************
+Train 1 Epoch5, Evaluate for atepc_datasets/camera
+steps 56
+APC_test_acc: 94.02(max: 94.71)  APC_test_f1: 91.89(max: 92.94)
+ATE_test_f1: 85.03(max:88.13)
+********************************************************************************
+********************************************************************************
+Train 1 Epoch5, Evaluate for atepc_datasets/camera
+steps 76
+APC_test_acc: 91.95(max: 94.71)  APC_test_f1: 88.6(max: 92.94)
+ATE_test_f1: 85.59(max:88.13)
+********************************************************************************
+********************************************************************************
+Train 1 Epoch5, Evaluate for atepc_datasets/camera
+steps 96
+APC_test_acc: 94.71(max: 94.71)  APC_test_f1: 93.11(max: 93.11)
+ATE_test_f1: 84.32(max:88.13)
+********************************************************************************
+********************************************************************************
+Train 1 Epoch5, Evaluate for atepc_datasets/camera
+steps 116
+APC_test_acc: 94.48(max: 94.71)  APC_test_f1: 92.65(max: 93.11)
+ATE_test_f1: 87.01(max:88.13)
+********************************************************************************
+********************************************************************************
+Train 1 Epoch5, Evaluate for atepc_datasets/camera
+steps 136
+APC_test_acc: 91.72(max: 94.71)  APC_test_f1: 89.7(max: 93.11)
+ATE_test_f1: 85.21(max:88.13)
+********************************************************************************
+********************************************************************************
+Train 1 Epoch5, Evaluate for atepc_datasets/camera
+steps 156
+APC_test_acc: 92.41(max: 94.71)  APC_test_f1: 90.43(max: 93.11)
+ATE_test_f1: 86.35(max:88.13)
+********************************************************************************
+********************************************************************************
+Train 1 Epoch5, Evaluate for atepc_datasets/camera
+steps 176
+APC_test_acc: 92.41(max: 94.71)  APC_test_f1: 90.43(max: 93.11)
+ATE_test_f1: 86.61(max:88.13)
+********************************************************************************
+********************************************************************************
+Train 1 Epoch5, Evaluate for atepc_datasets/camera
+steps 196
+APC_test_acc: 94.71(max: 94.71)  APC_test_f1: 93.15(max: 93.15)
+ATE_test_f1: 87.64(max:88.13)
+********************************************************************************
+********************************************************************************
+Train 1 Epoch5, Evaluate for atepc_datasets/camera
+steps 216
+APC_test_acc: 95.17(max: 95.17)  APC_test_f1: 93.71(max: 93.71)
+ATE_test_f1: 87.56(max:88.13)
+********************************************************************************
+********************************************************************************
+Train 1 Epoch5, Evaluate for atepc_datasets/camera
+steps 236
+APC_test_acc: 95.4(max: 95.4)  APC_test_f1: 93.95(max: 93.95)
+ATE_test_f1: 86.91(max:88.13)
+********************************************************************************
+********************************************************************************
+Train 1 Epoch5, Evaluate for atepc_datasets/camera
+steps 256
+APC_test_acc: 92.41(max: 95.4)  APC_test_f1: 89.25(max: 93.95)
+ATE_test_f1: 87.25(max:88.13)
+********************************************************************************
+********************************************************************************
+Train 1 Epoch5, Evaluate for atepc_datasets/camera
+steps 276
+APC_test_acc: 94.48(max: 95.4)  APC_test_f1: 92.61(max: 93.95)
+ATE_test_f1: 86.7(max:88.13)
+********************************************************************************
+********************************************************************************
+Train 1 Epoch5, Evaluate for atepc_datasets/camera
+steps 296
+APC_test_acc: 93.33(max: 95.4)  APC_test_f1: 91.41(max: 93.95)
+ATE_test_f1: 87.9(max:88.13)
+********************************************************************************
+********************************************************************************
+Train 1 Epoch5, Evaluate for atepc_datasets/camera
+steps 316
+APC_test_acc: 93.33(max: 95.4)  APC_test_f1: 91.36(max: 93.95)
+ATE_test_f1: 85.14(max:88.13)
+********************************************************************************
+********************************************************************************
+Train 1 Epoch5, Evaluate for atepc_datasets/camera
+steps 336
+APC_test_acc: 93.33(max: 95.4)  APC_test_f1: 91.36(max: 93.95)
+ATE_test_f1: 84.05(max:88.13)
+********************************************************************************
+********************************************************************************
+Train 1 Epoch5, Evaluate for atepc_datasets/camera
+steps 356
+APC_test_acc: 93.33(max: 95.4)  APC_test_f1: 91.68(max: 93.95)
+ATE_test_f1: 86.44(max:88.13)
+********************************************************************************
+********************************************************************************
+Train 1 Epoch5, Evaluate for atepc_datasets/camera
+steps 376
+APC_test_acc: 94.25(max: 95.4)  APC_test_f1: 92.59(max: 93.95)
+ATE_test_f1: 85.28(max:88.13)
+********************************************************************************
+********************************************************************************
+Train 1 Epoch5, Evaluate for atepc_datasets/camera
+steps 396
+APC_test_acc: 94.94(max: 95.4)  APC_test_f1: 93.31(max: 93.95)
+ATE_test_f1: 75.61(max:88.13)
+********************************************************************************
+********************************************************************************
+Train 1 Epoch5, Evaluate for atepc_datasets/camera
+steps 416
+APC_test_acc: 94.94(max: 95.4)  APC_test_f1: 93.05(max: 93.95)
+ATE_test_f1: 82.53(max:88.13)
+********************************************************************************
+********************************************************************************
+Train 1 Epoch5, Evaluate for atepc_datasets/camera
+steps 436
+APC_test_acc: 95.17(max: 95.4)  APC_test_f1: 93.51(max: 93.95)
+ATE_test_f1: 85.14(max:88.13)
+********************************************************************************
+max_ate_test_f1:88.13 max_apc_test_acc: 95.4	max_apc_test_f1: 93.95 	
